@@ -1,0 +1,270 @@
+@import "./variables";
+@import "./mixins";
+
+.section_padding_tab {
+  padding-top: 10rem;
+  padding-bottom: 6rem;
+  margin-top: -2.5rem;
+  position: relative;
+  @include mobile {
+    padding-bottom: 0;
+  }
+
+  .container {
+    @include mobile {
+      max-width: 100%;
+    }
+
+    .title-block {
+      @include mobile {
+        max-width: 90%;
+      }
+    }
+  }
+
+  @include tablet {
+    margin-top: 0;
+    padding-top: 6rem;
+  }
+
+  .title-block {
+    max-width: 750px;
+    margin: 0 auto;
+
+    @include mobile {
+      text-align: left;
+    }
+  }
+
+  .grid-block {
+    margin-top: 1.5rem;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+
+    .grid-single {
+      position: relative;
+      width: calc(100% / 3);
+      @include mobile {
+        border-bottom: 1px solid $golden;
+        width: 100%;
+      }
+
+      &:nth-child(1) {
+        &::after {
+          content: "";
+          position: absolute;
+          height: 150px;
+          background-color: $golden;
+          left: 0;
+          top: 0;
+          width: 1px;
+          z-index: 3;
+
+          @include mobile {
+            display: none;
+          }
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          height: 1px;
+          background-color: $golden;
+          left: 0;
+          top: 0;
+          width: 150px;
+          z-index: 2;
+
+          @include mobile {
+            display: none;
+          }
+        }
+      }
+
+      &:nth-child(2) {
+        &::after {
+          content: "";
+          position: absolute;
+          width: 150px;
+          background-color: $golden;
+          left: -75px;
+          bottom: 0;
+          height: 1px;
+          z-index: 2;
+
+          @include mobile {
+            display: none;
+          }
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          height: 150px;
+          background-color: $golden;
+          left: 0;
+          bottom: -75px;
+          width: 1px;
+          z-index: 2;
+
+          @include mobile {
+            display: none;
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        &::after {
+          content: "";
+          position: absolute;
+          height: 150px;
+          background-color: $golden;
+          right: 0;
+          top: 0;
+          width: 1px;
+          z-index: 2;
+
+          @include mobile {
+            display: none;
+          }
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          height: 1px;
+          background-color: $golden;
+          right: 0;
+          top: 0;
+          width: 150px;
+          z-index: 2;
+
+          @include mobile {
+            display: none;
+          }
+        }
+      }
+
+      &:nth-child(4) {
+        &::after {
+          content: "";
+          position: absolute;
+          height: 150px;
+          background-color: $golden;
+          left: 0;
+          bottom: 0;
+          width: 1px;
+          z-index: 2;
+
+          @include mobile {
+            display: none;
+          }
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          height: 1px;
+          background-color: $golden;
+          left: 0;
+          bottom: 0;
+          width: 150px;
+          z-index: 2;
+
+          @include mobile {
+            display: none;
+          }
+        }
+      }
+
+      &:nth-child(5) {
+        &::after {
+          content: "";
+          position: absolute;
+          width: 150px;
+          background-color: $golden;
+          right: -75px;
+          top: 0;
+          height: 1px;
+          z-index: 2;
+
+          @include mobile {
+            display: none;
+          }
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          height: 150px;
+          background-color: $golden;
+          right: 0;
+          top: -75px;
+          width: 1px;
+          z-index: 2;
+
+          @include mobile {
+            display: none;
+          }
+        }
+      }
+
+      &:nth-child(6) {
+        &::after {
+          content: "";
+          position: absolute;
+          height: 150px;
+          background-color: $golden;
+          right: 0;
+          bottom: 0;
+          width: 1px;
+          z-index: 2;
+
+          @include mobile {
+            display: none;
+          }
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          height: 1px;
+          background-color: $golden;
+          right: 0;
+          bottom: 0;
+          width: 150px;
+          z-index: 2;
+
+          @include mobile {
+            display: none;
+          }
+        }
+      }
+      .grid-single-detail {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-direction: column;
+
+        .grid-single-text {
+          font-size: 1.15rem;
+          color: $golden;
+          line-height: 1.4;
+          max-width: 170px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
