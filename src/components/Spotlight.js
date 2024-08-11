@@ -3,15 +3,15 @@ import SwiperCore from "swiper/core";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import Image from "next/image";
-import arrow from "@/app/assets/arrow-front.svg";
-import BannerImg from "@/app/assets/Banner.png";
-import BannerMobImg from "@/app/assets/Banner-mob.png";
-import { useMediaQuery } from "@/app/utils/mediaQuery";
+import arrow from "@/assets/arrow-front.svg";
+import BannerImg from "@/assets/Banner.png";
+import BannerMobImg from "@/assets/Banner-mob.png";
+import { useMediaQuery } from "@/utils/mediaQuery";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "@/app/styles/_spotlight.scss";
-import ResponsiveImage from "@/app/utils/ResponsiveImage";
+import "@/styles/_spotlight.scss";
+import ResponsiveImage from "@/utils/ResponsiveImage";
 
 SwiperCore.use([Navigation, Pagination]);
 

@@ -72,6 +72,10 @@ ol {
   padding: 6rem 0 5rem;
 }
 
+// Displays
+.d-block {
+  display: block;
+}
 
 // Margin Padding
 .mb-0 {
@@ -103,6 +107,27 @@ ol {
   padding-block: 6rem;
 }
 
+// Width
+.w-100 {
+  width: 100%;
+}
+// Arrows
+.swiper_button_prev {
+  position: absolute;
+  right: 60px;
+  cursor: pointer;
+  z-index: 2;
+  transform: rotate(-180deg);
+  img {
+    display: block;
+  }
+}
+.swiper_button_next {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  z-index: 2;
+}
 // positions
 .relative {
   position: relative;

@@ -1,0 +1,79 @@
+@import "../styles/variables";
+@import "../styles/mixins";
+
+.MuiTouchRipple-root {
+  display: none;
+}
+
+.accordion {
+  .MuiList-root {
+    padding: 0;
+  }
+  .MuiListItem-button {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #00000020;
+    padding-bottom: 0.75rem;
+    padding-top: 0.75rem;
+    &:hover {
+      background: transparent;
+    }
+    .accordion_title {
+      font-size: 1.5rem;
+      line-height: 1.4;
+      color: $golden;
+      font-weight: 400;
+      @include mobile {
+        font-size: 1.25rem;
+      }
+    }
+    .MuiIconButton-root {
+      svg {
+        fill: $golden;
+      }
+    }
+  }
+  .accordion_data {
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    p {
+      color: #000000;
+      font-size: 1rem;
+      line-height: 1.5;
+      font-weight: 400;
+      @include mobile {
+        font-size: 0.875rem;
+      }
+    }
+    a {
+      color: $maroon;
+    }
+    ul {
+      margin-top: 0.75rem;
+      li {
+        padding-left: 1.5rem;
+        position: relative;
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+        line-height: 1.5;
+        @include mobile {
+          font-size: 0.875rem;
+        }
+        &:before {
+          content: "";
+          position: absolute;
+          background-color: #c5a26e;
+          height: 6px;
+          width: 6px;
+          top: 9px;
+          left: 8px;
+          border-radius: 50%;
+        }
+      }
+      + p {
+        margin-top: 1.5rem;
+      }
+    }
+  }
+}

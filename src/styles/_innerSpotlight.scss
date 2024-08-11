@@ -1,0 +1,42 @@
+@import "./variables";
+@import "./mixins";
+
+.spotlight-inner {
+  position: relative;
+  @include mobile {
+    height: 430px;
+  }
+  img {
+    @include mobile {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      object-fit: cover;
+      object-position: center center;
+    }
+  }
+  .spotlight-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    @include mobile {
+      width: 90%;
+    }
+    .inner-sub-title {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    .inner-title {
+      color: $golden;
+      font-size: 2.75rem;
+      line-height: 1.3;
+      font-weight: 700;
+      @include mobile {
+        font-size: 1.875rem;
+      }
+    }
+  }
+}

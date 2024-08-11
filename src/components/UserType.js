@@ -1,21 +1,21 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import EnhancedCred from "@/app/assets/Enhanced_credibility .svg";
-import ExclusiveMarket from "@/app/assets/exclusive_markets.svg";
-import ClientBase from "@/app/assets/client_base.svg";
-import BillionTrader from "@/app/assets/billion-trader.png";
-import BillionTraderIcon from "@/app/assets/billion-trader-icon.svg";
-import Assaying from "@/app/assets/assaying.png";
-import Retailer from "@/app/assets/Retailer.png";
-import HallmarkIcon from "@/app/assets/hallmark-agent-icon.svg";
-import RetailerIcon from "@/app/assets/billion-trader-icon.svg";
-import ManufacturerIcon from "@/app/assets/retailer-icon.svg";
-import DigitalIcon from "@/app/assets/manufacturer-icon.svg";
-import RefinerIcon from "@/app/assets/Refiner-icon.svg";
+import EnhancedCred from "@/assets/Enhanced_credibility .svg";
+import ExclusiveMarket from "@/assets/exclusive_markets.svg";
+import ClientBase from "@/assets/client_base.svg";
+import BillionTrader from "@/assets/billion-trader.png";
+import BillionTraderIcon from "@/assets/billion-trader-icon.svg";
+import Assaying from "@/assets/assaying.png";
+import Retailer from "@/assets/Retailer.png";
+import HallmarkIcon from "@/assets/hallmark-agent-icon.svg";
+import RetailerIcon from "@/assets/billion-trader-icon.svg";
+import ManufacturerIcon from "@/assets/retailer-icon.svg";
+import DigitalIcon from "@/assets/manufacturer-icon.svg";
+import RefinerIcon from "@/assets/Refiner-icon.svg";
 
 
-import "@/app/styles/_usertype.scss";
+import "@/styles/_usertype.scss";
 
 const UserType = () => {
   return (
@@ -32,7 +32,7 @@ const UserType = () => {
               alt="Billion Trader"
               width={426}
               height={250}
-              className="img-fluid"
+              className="img-fluid w-100"
             />
             <div className="grid-single-detail">
               <Image
@@ -51,7 +51,7 @@ const UserType = () => {
               alt="Assaying"
               width={426}
               height={250}
-              className="img-fluid"
+              className="img-fluid w-100"
             />
             <div className="grid-single-detail">
               <Image
@@ -71,7 +71,7 @@ const UserType = () => {
               alt="Retailer"
               width={426}
               height={250}
-              className="img-fluid"
+              className="img-fluid w-100"
             />
             <div className="grid-single-detail">
               <Image
@@ -90,7 +90,7 @@ const UserType = () => {
               alt="Billion Trader"
               width={426}
               height={250}
-              className="img-fluid"
+              className="img-fluid w-100"
             />
             <div className="grid-single-detail">
               <Image
@@ -109,7 +109,7 @@ const UserType = () => {
               alt="Billion Trader"
               width={426}
               height={250}
-              className="img-fluid"
+              className="img-fluid w-100"
             />
             <div className="grid-single-detail">
               <Image
@@ -128,7 +128,7 @@ const UserType = () => {
               alt="Billion Trader"
               width={426}
               height={250}
-              className="img-fluid"
+              className="img-fluid w-100"
             />
             <div className="grid-single-detail">
               <Image

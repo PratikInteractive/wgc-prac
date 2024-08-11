@@ -1,0 +1,66 @@
+@import "../styles/variables";
+@import "../styles/mixins";
+
+.timeline {
+    padding: 3rem 0; 
+    &.full-width {
+        max-width: 100%;
+
+    }
+    .timeline-row{
+        display: flex;
+        gap: 3rem;
+        flex-wrap: wrap;
+        align-items: center;
+        @include mobile {
+            gap: 2rem;
+        }
+        &.rev-row {
+            .timeline-split:first-child{
+                order: 2;
+            }
+            .timeline-split{
+                &.non-video-block {
+                    max-width: 90%;
+                    margin: 0 auto;
+                }
+            }
+        }
+        &.full-width {
+            .timeline-split {
+                width: 100%;
+            }       
+        }
+        .timeline-split {
+            width: calc((100% / 2) - 3rem);
+            @include mobile {
+                width: 100%;
+            }
+            &.logo-block {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                @include mobile{
+                    justify-content: center;
+                }
+            }
+            .pill {
+                font-size: 1.25rem;
+                line-height: 1;
+                color: #ffffff;
+                background-color: #b7202e;
+                padding: 10px 20px;
+                margin-bottom: 0.5rem;
+                display: inline-block;
+                border-radius: 4px;
+                font-weight: bold;
+            }
+            iframe {
+                max-width: 100%;
+                width: 100%;
+                height: unset;
+                aspect-ratio: 16 / 9;
+            }
+        }
+    }
+}
