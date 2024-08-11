@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { useMediaQuery } from "@/app/utils/mediaQuery";
+import { useMediaQuery } from "@/utils/mediaQuery";
 
 const ResponsiveImage = ({ desktopImg, mobileImg, className , priority }) => {
   const isMobile = useMediaQuery("(max-width: 767.98px)");

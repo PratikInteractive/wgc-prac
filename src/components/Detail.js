@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import DetailImg from "@/app/assets/Gold-shopping.png";
-import "@/app/styles/_detail.scss";
+import DetailImg from "@/assets/Gold-shopping.png";
+import "@/styles/_detail.scss";
 
 const Detail = () => {
   return (

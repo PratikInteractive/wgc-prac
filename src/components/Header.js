@@ -1,28 +1,26 @@
 "use client";
 import Image from "next/image";
-import logo from "@/app/assets/logo.svg";
-import "@/app/styles/_headers.scss";
+import logo from "@/assets/logo.svg";
+import { usePathname } from "next/navigation";
+import "@/styles/_headers.scss";
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
 const Header = () => {
-  const [isLangOptionsVisible, setIsLangOptionsVisible] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState("Eng");
+ 
   const [isMobileNavVisible, setIsMobileNavVisible] = useState(false);
+
+  const pathname = usePathname();
 
   const toggleMobileNav = () => {
     setIsMobileNavVisible(!isMobileNavVisible);
   };
 
-  const toggleLangOptions = () => {
-    setIsLangOptionsVisible(!isLangOptionsVisible);
-  };
+  useEffect(() => {
+    setIsMobileNavVisible(false);
+  }, [pathname]);
 
-  const selectLanguage = (language) => {
-    setSelectedLanguage(language);
-    setIsLangOptionsVisible(false);
-  };
 
 
   return (
@@ -42,12 +40,12 @@ const Header = () => {
         <div className={`navigation ${isMobileNavVisible ? "visible" : ""}`}>
           <ul>
             <li>
-              <a href="#">About Us</a>
+              <Link href="/about-us">About Us</Link>
               </li>
               <li>
-              <a href="#">Governance</a></li>
+              <Link href="/governance">Governance</Link></li>
               <li>
-              <a href="#">Resources</a>
+              <Link href="/resources">Resources</Link>
             </li>
           </ul>
         </div>
